@@ -162,7 +162,7 @@ async function cmdDev(opts: DevArgs): Promise<void> {
 		port,
 		onListening: () =>
 			logSuccess(
-				`[cdk-local] listening on http://localhost:${port} (${handle.routes.length} routes)`,
+				`[cdk-local] running http on http://localhost:${port} (${handle.routes.length} routes)`,
 			),
 		onStop: () => handle.stop(),
 	});
